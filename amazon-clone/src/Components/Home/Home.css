@@ -1,0 +1,36 @@
+.home__image {
+    width: 100%;
+    z-index: -1;
+    margin-bottom: -150px;
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+
+}
+
+
+.home {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    top: 60px;
+    max-width: 1500px;
+    margin: auto;
+}
+
+.home__row {
+    display: flex;
+    z-index: 1;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 500px) {
+    .home__row {
+        flex-direction: column;
+    }
+
+    .home {
+        position: relative;
+        top: 140px;
+    }
+}

@@ -1,0 +1,36 @@
+.order {
+    padding: 40px;
+    margin: 20px 0;
+    border: 1px solid lightgray;
+    background-color: white;
+}
+
+.order__headBar {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+}
+
+
+.order__total {
+    font-weight: 500;
+    text-align: right;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .order__total {
+        text-align: center;
+    }
+    .order {
+        max-width: 100vw;
+    }
+
+    .order__makeCentered {
+        margin-left: 30px;
+        /* text-align: center; */
+    }
+
+    
+}
